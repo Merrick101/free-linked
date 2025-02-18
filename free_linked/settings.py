@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'users',
     'jobs',
     'proposals',
-    'messages',
+    'user_messages',
     'reviews',
 ]
 
