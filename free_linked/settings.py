@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-e56#28x@m=iat05(0@8brx2^4pp(w3326@$w%q1k!iw^%9x2p%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [['.herokuapp.com']]
 
 
 # Application definition
@@ -85,6 +85,9 @@ WSGI_APPLICATION = 'free_linked.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
 # Password validation
